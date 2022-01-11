@@ -117,66 +117,71 @@
 #
 # unknown()
 
-# ----------------- Function Recursion -------------
-
-# Example : def factorial()
-#
-# def factorial_recursion(num):
-#     if num == 0 or num == 1:
-#         return 1
-#     else:
-#         return num * factorial_recursion(num-1)
-#
-#
-# print(factorial_recursion(5))
-
-
-# def
-#    fact = 1
-#     while num > 0:
-#         fact = fact * num
-#         num = num - 1
-#     return fact
-#
-# print(factorial(1))
-
 # ---------------------Lambda Function -------------
 # Example 1:
-
 #  syntax = lambda parameter(multiple) : expression(single)
 
-# a  = lambda x, y : x + y
-# print(a(10, 20))
-
-# # Example2 :
-# square  = lambda x :x * x
-# print(square(10))
-# Example 3 :
+# a = lambda x, y,z : x+y+z
+# print(a(10,20,30))
 
 # ------------------- Map Function -----------------
 
 # Example 1: def sqaure()
+# map(func, iterababe)   # iterables = list, set , dict, string, tuple
+
+# def square(lst):
+#     square_lst = []
+#     for i in lst:
+#         square_lst.append(i**2)
+#     return square_lst
+#
+#
+# print(square([1,2,3,4,5]))
+#
 # def square(x):
 #     return x**2
 #
-# print(list(map(square,[1,2,3,4,5])))
+# print(list(map(square, [1, 2, 3, 4, 5])))
 
 
 # Example 2: def even()
-#
 # def even(x):
 #     if x % 2 == 0:
-#         return x
+#         return True
 #     else:
-#         pass
+#         return False
 #
-# print(list(map(even,[1,2,3,4,5])))
-# Example 3: def odd()
+# print(list(map(even,[1,2,3,4,6,7,8])))
+
 
 # -------------------- Filter Function---------------
 
 # Example 1: def even , odd
-
+# def even(x):
+#     if x % 2 == 0:
+#         return True
+#     else:
+#         return False
+#
+# def odd(x):
+#     if x % 2 == 1:
+#         return True
+#     else:
+#         return False
+#
+# even_lst = filter(even, [1,2,3,4,5,6])
+# print(list(even_lst))
+# odd_lst = filter(odd, [1,2,3,4,5,6,7])
+# print(list(odd_lst))
 # -------------------- Zip Function -----------------
 
 # Example: fname, lname
+# fname = ["Ashish", "Somesh"]
+# lname = ["Lulla", "Patil"]
+# age = [10,20]
+# zip_variable = dict(zip(fname, lname))
+# # print(zip_variable)
+# # print(list(zip_variable))
+#
+# print(set(zip_variable))
+# print(tuple(zip_variable))
