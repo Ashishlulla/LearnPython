@@ -14,9 +14,9 @@
 # print(20 + 10)  # output 30
 # print(20 - 10)  # output 10
 # print(20 * 10)  # output 200
-# print(20 / 6)  # output 2.0
-# print(20// 6)  # output 2
-# print(20 % 6)  # output 3
+# print(20 / 6)  # output 3.3333333
+# print(20// 6)  # output 3
+# print(20 % 6)  # output 2
 
 # Printing List, tuple, Dictionary, Set
 
